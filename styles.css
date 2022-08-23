@@ -23,9 +23,13 @@ body {
 }
 
 #sketch-canvas {
-    background-color: white;
+    background-color: grey;
     width: 1024px;
     height: 600px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .botside {
@@ -49,3 +53,17 @@ body {
 .topside {
     font-size: 32px;
 }
+
+.pixel {
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+
+    border-right: 0;
+}
+
+.pixel:hover {
+    border: 1px solid gray;
+}
+
